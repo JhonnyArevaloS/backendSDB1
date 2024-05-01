@@ -1,0 +1,400 @@
+/*----------------------------------------------------------------------------------------BARRA DE NAVEGACION------------------------------------------------------------------------*/
+
+#rowdebarra{
+  background: rgb(0,176,255);
+  background: linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(14,28,209,1) 96%);
+  background-color: rgb(0, 140, 255);
+    color: white;
+    box-shadow: 0 0 15px  rgb(0, 140, 255), 
+                0 0 45px  rgb(0, 140, 255),
+                0 0 75px  rgb(0, 140, 255),
+                0 0 115px  rgb(0, 140, 255);
+ }
+
+ .a{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+ /*----------------------------------------------------------------------------------------FIN----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+ /*----------------------------------------------------------------------------------------PAGINA DE INICIO----------------------------------------------------------------------------*/
+
+#containerderecetas{
+    height: 800px;
+    width: auto;
+}
+
+#rowderecetas{
+  height: auto;
+}
+
+#nombrerecetadeldia{
+  background-color: rgb(255, 255, 255);
+}
+
+#articuloderecetas{
+  background: rgb(102,0,184);
+  background: linear-gradient(0deg, rgba(102,0,184,1) 2%, rgba(121,2,248,1) 16%, rgba(79,5,238,1) 30%, rgba(18,7,232,1) 48%, rgba(9,57,224,1) 68%, rgba(12,136,216,1) 85%, rgba(14,195,209,1) 100%);
+}
+
+.card-title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+.card-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  color: rgb(0, 0, 0);
+  font-size:medium;
+}
+
+/*----------------------------------------------------------------------------------------FIN-------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------INTERFAZ DE RECETAS---------------------------------------------------------------------*/
+
+
+#containerrecetas{
+background: rgb(102,0,184);
+background: linear-gradient(0deg, rgb(158, 16, 198) 2%, rgb(92, 2, 248) 16%, rgb(21, 5, 238) 30%, rgba(7, 150, 232, 0.587) 48%, rgba(255, 255, 255, 0) 68%);
+padding: 30px 60px;
+}
+
+#receta{
+font-weight: 700;
+font-size: 50px;
+font-family: monospace;
+}
+
+.accordion-button{
+font-size: 30px;
+}
+
+#recetasporcategoria{
+font-size: 15px;
+}
+
+/*----------------------------------------------------------------------------------------FIN-----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------INTERFAZ DE INICIO DE SESION----------------------------------------------------------*/
+
+#containerexterior{
+  background: rgb(102,0,184);
+  background: linear-gradient(0deg, rgba(102,0,184,1) 2%, rgba(121,2,248,1) 16%, rgba(79,5,238,1) 30%, rgba(18,7,232,1) 48%, rgba(9,57,224,1) 68%, rgba(12,136,216,1) 85%, rgba(14,195,209,1) 100%);
+}
+
+#buttonflechaIniciodesesion{
+  transform: scale(2,2);
+  text-decoration: none;
+  color: rgb(43, 0, 255);
+}
+
+#imagenlogin{ 
+  width: 180px;
+  height: 180px;
+}
+
+#columna-derecha{
+  background-image: url("../Imagenes/imagen\ de\ fondo\ 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aliniciarsesionpodras{
+  font-family: sans-serif;
+}
+
+#barradenavegacion{
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.748);
+}
+#chef{
+  border-radius: 20px;
+  padding: 10px;
+  width: 190px;
+  height: 150px;
+}
+
+/*----------------------------------------------------------------------------------------FIN-------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------------------INTERFAZ DE CREAR CUENTA----------------------------------------------------------------*/
+#articulodecreaciondecuenta{
+  background: rgb(102,0,184);
+  background: linear-gradient(0deg, rgba(102,0,184,1) 2%, rgba(121,2,248,1) 16%, rgba(79,5,238,1) 30%, rgba(18,7,232,1) 48%, rgba(9,57,224,1) 68%, rgba(12,136,216,1) 85%, rgba(14,195,209,1) 100%);
+}
+
+p{
+  margin:5px;
+  text-align: center;
+  font-size:large;
+}
+
+#rowbarra{
+  height: 100px;
+  background: rgb(0,176,255);
+  background: linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(14,28,209,1) 96%);
+  background-color: rgb(0, 140, 255);
+  color: white;
+  box-shadow: 0 0 15px  rgb(0, 140, 255), 
+              0 0 45px  rgb(0, 140, 255),
+              0 0 75px  rgb(0, 140, 255),
+              0 0 115px  rgb(0, 140, 255);
+  
+}
+
+#buttonflechaCrearCuenta{
+  padding-left: 20px;
+  transform: scale(3,3);
+  text-decoration: none;
+  color: white;
+}
+
+#containercuenta{
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 140, 255);
+}
+
+label{
+  font-size:larger;
+}
+
+#imagendecolumna{
+  background-image: url("../Imagenes/Ingredientesdecocina.jpg");
+  background-repeat: no-repeat;
+  background-size : cover;
+  align-items:center;
+}
+
+/*----------------------------------------------------------------------------------------FIN*--------------------------------------------------------------------------------/
+
+
+
+
+/*----------------------------------------------------------------------------------------INTERFAZ DE PERFIL-----------------------------------------------------------------*/
+
+#rowdebarraPerfil{
+  padding-top: 10px;
+  background: rgb(0,176,255);
+  background: linear-gradient(0deg, rgba(0,176,255,1) 0%, rgba(14,28,209,1) 96%);
+  background-color: rgb(0, 140, 255);
+    color: white;
+    box-shadow: 0 0 15px  rgb(0, 140, 255), 
+                0 0 45px  rgb(0, 140, 255),
+                0 0 75px  rgb(0, 140, 255),
+                0 0 115px  rgb(0, 140, 255);
+  }
+
+  #rowperfil{
+      background: rgb(102,0,184);
+      background: linear-gradient(0deg, rgb(16, 152, 198) 2%, rgb(2, 170, 248) 16%, rgb(5, 137, 238) 30%, rgba(18,7,232,1) 48%, rgba(9,57,224,1) 68%);
+  }
+
+#nav-item-1{
+  background-color: rgba(10, 0, 68, 0.71);
+}
+ #imagenloginPerfil{
+  width: 100px;
+  height: 100px;
+ }
+
+ #nombreusuarioPerfil{
+  color: rgb(0, 0, 0);
+}
+
+#imagenlogin2{
+  padding-top:  30px;
+  width: 200px;
+  height: 225px;
+}
+
+ 
+
+/*----------------------------------------------------------------------------------------FIN--------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------CONFIGURACION---------------------------------------------------------------------------*/
+
+#containerdeconfiguracion{
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: rgb(0,207,255);
+background: radial-gradient(circle, rgba(0,207,255,1) 0%, rgb(27, 19, 193) 100%);
+  }
+
+ #rowdeconfiguracion{
+  padding: 20px;
+  width: 900px;
+  background-color: white;
+ }
+  
+#slider {
+  width: 100%;
+  background-color:rgb(0, 0, 0);
+}
+
+#text {
+  font-size: 16px;
+}
+
+
+
+
+:root {
+  --color-green: #1600a8;
+  --color-red: #1600a86d;
+  --color-button: #ffffff;
+  --color-black: #000;
+}
+
+.switch-button {
+  display: inline-block;
+}
+
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 5rem;
+  height: 3rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(2rem);
+}
+
+/*---------------------------------------------------------------------------------------FIN-------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------BOTON DE DONACION------------------------------------------------------------------------*/
+
+
+ 
+#botondonar{
+background: #1220ed url(https://donorbox.org/images/white_logo.svg) no-repeat 24px;
+color: #fff;text-decoration: none;
+font-family: Verdana,sans-serif;
+display: inline-block;
+font-size: 14px;
+padding: 12px 24px;
+padding-left: 48px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+/*---------------------------------------------------------------------------------FIN---------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------FOOTER DE LA PAGINA---------------------------------------------------------------*/
+
+#containerfooter{
+  background-color: rgb(24, 0, 202);
+  box-shadow: 0 0 15px  rgb(17, 0, 255), 
+                0 0 45px  rgb(41, 62, 255),
+                0 0 75px  rgb(63, 85, 255),
+                0 0 100px  rgb(118, 241, 255);
+}
+
+
+#footer{
+ background-color: rgb(0, 58, 173);
+ margin: auto;
+  height: auto;
+  box-shadow: 0 0 15px  rgb(0, 140, 255), 
+                0 0 45px  rgb(0, 140, 255),
+                0 0 75px  rgb(0, 140, 255),
+                0 0 115px  rgb(0, 140, 255);
+}
+
+
+
+#contenedorderedessociales{
+  width: 300px;
+  top: -25%;
+  margin: 1;
+  padding: 0;
+  transform: translateY(-25%);
+}
+
+i{
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 20px;
+  border-radius: 50%;
+
+  padding: 15px;
+  box-shadow: 0px 5px 10px rgb(0, 0, .35);
+  transition: .3s ease;
+}
+
+.fa-facebook:hover{
+  background-color: rgb(0, 140, 255);
+  color: white;
+  box-shadow: 0 0 15px  rgb(0, 140, 255), 
+              0 0 45px  rgb(0, 140, 255),
+              0 0 75px  rgb(0, 140, 255),
+              0 0 115px  rgb(0, 140, 255);
+}
+
+.fa-whatsapp:hover{
+  background-color: rgb(24, 199, 71);
+  color: white;
+  box-shadow: 0 0 15px rgb(24, 199, 71), 
+              0 0 45px rgb(24, 199, 71),
+              0 0 75px rgb(24, 199, 71),
+              0 0 115px rgb(24, 199, 71);
+}
+
+.fa-instagram:hover{
+  background-color: rgb(255, 132, 0);
+  color: white;
+  box-shadow: 0 0 15px rgb(255, 132, 0), 
+              0 0 45px rgb(255, 132, 0),
+              0 0 75px rgb(255, 132, 0),
+              0 0 115px rgb(255, 132, 0);
+}
+
+/*----------------------------------------------------------------------------------------FIN------------------------------------------------------------------------------*/
