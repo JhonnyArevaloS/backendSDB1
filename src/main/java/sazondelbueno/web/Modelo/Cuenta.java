@@ -6,7 +6,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name="cuentas")
 public class Cuenta {
@@ -15,19 +21,25 @@ public class Cuenta {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name= "nombre", nullable = false, length = 20, unique = true)
+	@Column(name= "nombre", nullable = false, length = 20)
 	private String nombre;
 	
 	@Column(name= "correo", nullable = false, length = 25, unique = true)
 	private String correo;
 	
-	@Column(name= "contraseña", nullable = false, length = 20)
-	private String contraseña;
+	@Column(name= "contrasena", nullable = false, length = 20)
+	private String contrasena;
 
-	public Cuenta() {
+
+	public Cuenta(String correo,String contrasena){
+		this.contrasena=contrasena;
+		this.correo= correo;
 	}
 
-	public Cuenta(String nombre, String correo, String contraseña) {
+/*	public Cuenta() {
+	}*/
+
+	/*public Cuenta(String nombre, String correo, String contraseña) {
 		super();
 		this.nombre = nombre;
 		this.correo = correo;
@@ -69,7 +81,7 @@ public class Cuenta {
 	@Override
 	public String toString() {
 		return "Cuenta [id=" + id + ", nombre=" + nombre + ", correo=" + correo + ", contraseña=" + contraseña + "]";
-	}
+	}*/
 	
 	
 	
