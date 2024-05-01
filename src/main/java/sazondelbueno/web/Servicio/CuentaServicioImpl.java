@@ -2,7 +2,6 @@ package sazondelbueno.web.Servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import sazondelbueno.web.Modelo.Cuenta;
 import sazondelbueno.web.Repositorio.CuentaRepositorio;
 
@@ -25,13 +24,9 @@ public class CuentaServicioImpl implements CuentaServicio {
 	}
 
 	@Override
-	public Cuenta findByEmail(Cuenta cuenta) {
-		return repositorio.findByEmail(cuenta.getCorreo());
+	public Cuenta existeCuenta(String email, String password) {
+		return repositorio.getByEmailAndPassword(email,password);
 	}
-
-
-
-
 
 
 }

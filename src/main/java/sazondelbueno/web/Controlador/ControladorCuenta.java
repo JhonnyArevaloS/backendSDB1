@@ -13,7 +13,7 @@ import sazondelbueno.web.Servicio.CuentaServicio;
 import java.util.List;
 
 @Controller
-@RequestMapping("/cuentas")
+@RequestMapping("/acounts")
 @CrossOrigin("*")
 public class ControladorCuenta{
 	
@@ -31,11 +31,12 @@ public class ControladorCuenta{
 		return new ResponseEntity<>(lista, HttpStatus.OK);
 	}
 
-	@PostMapping()
-	public ResponseEntity<Cuenta> findByEmail(@RequestBody Cuenta c){
-		Cuenta cuenta = servicio.findByEmail(c);
-		return new ResponseEntity<>(cuenta, HttpStatus.OK);
+	@PostMapping("/exist")
+	public ResponseEntity<Cuenta> existAcount(@RequestBody Cuenta cuenta){
+		Cuenta c = servicio.existeCuenta(cuenta.getEmail(),cuenta.getPassword());
+		return new ResponseEntity<>(c,HttpStatus.OK);
 	}
+
 
 
 
