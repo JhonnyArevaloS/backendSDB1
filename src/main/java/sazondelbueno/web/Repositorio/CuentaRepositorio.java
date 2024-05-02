@@ -5,12 +5,5 @@ import sazondelbueno.web.Modelo.Cuenta;
 
 @Repository
 public interface CuentaRepositorio extends JpaRepository<Cuenta, Integer> {
-
     Cuenta getByEmailAndPassword(String email,String password);
-
-
-
-
-
-
 }
