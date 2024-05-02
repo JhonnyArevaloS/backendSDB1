@@ -10,19 +10,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="acount_like_recipe")
-public class AcountLikeRecipe {
+@Table(name="difficulty")
+public class Difficulty {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "id_acount",nullable = false)
-    private Long idAcount;
-
-    @Column(name = "id_recipe",nullable = false)
-    private Long idRecipe;
-
+    @Column(name = "level",nullable = false)
+    private Long level;
 
 
 }
