@@ -4,6 +4,6 @@ import org.springframework.stereotype.Repository;
 import sazondelbueno.web.Modelo.Cuenta;
 
 @Repository
-public interface CuentaRepositorio extends JpaRepository<Cuenta, Integer> {
+public interface CuentaRepositorio extends JpaRepository<Cuenta, Long> {
     Cuenta getByEmailAndPassword(String email,String password);
 }

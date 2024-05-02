@@ -11,6 +11,7 @@ import sazondelbueno.web.Modelo.Cuenta;
 import sazondelbueno.web.Servicio.CuentaServicio;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/acounts")
@@ -37,7 +38,25 @@ public class ControladorCuenta{
 		return new ResponseEntity<>(c,HttpStatus.OK);
 	}
 
+	@GetMapping("/{id}")
+	public ResponseEntity<Optional<Cuenta>>getById(@PathVariable("id") Long id){
+		Optional<Cuenta> c = servicio.getById(id);
+		return  new ResponseEntity<>(c,HttpStatus.OK);
+	}
 
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Boolean>deleteById(@PathVariable("id") Long id){
+		boolean exit = servicio.deleteById(id);
+		return  new ResponseEntity<>(exit,HttpStatus.OK);
+	}
 
+	@PatchMapping ("/{id}")
+	public ResponseEntity<Cuenta> updateDentist (@RequestBody Cuenta cuenta, @PathVariable Long id) {
+		try {
+			return new ResponseEntity<>(servicio.updateById(id,cuenta), HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
 
 }

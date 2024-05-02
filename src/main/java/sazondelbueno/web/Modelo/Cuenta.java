@@ -16,10 +16,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="cuentas")
 public class Cuenta {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	@Column(name= "name", nullable = false, length = 20)
 	private String name;
